@@ -101,3 +101,27 @@ img {
   width: 70%;
   text-align: right;
 }
+
+@media screen and (max-width: 600px) {
+  .tab {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 4rem;
+  }
+
+  .tab svg {
+    display: none;
+  }
+
+  .tabContent-wrap {
+    flex-direction: column;
+  }
+
+  .tabContent-img {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .tabContent-img img {
+    width: 100%;
+  }
+}
